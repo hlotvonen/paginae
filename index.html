@@ -1,35 +1,75 @@
-<html lang="fi">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pp.</title>
     <style>
+        @font-face {
+            font-family: 'Libre Franklin';
+            src: url('LibreFranklin-Medium.woff2') format('woff2'),
+                url('LibreFranklin-Medium.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
         body {
+            margin: 0.5rem;
+            background-color: rgb(240, 237, 231);
+            font-family: 'Libre Franklin', sans-serif;
+            max-width: 1280px;
+            width: 100%;
+        }
+        address {
+            font-style: normal;
+        }
+        abbr {
+            text-decoration: none;
+        }
+        p + p {
+            text-indent: 1rem;
+        }
+        main {
+            margin-top: 6rem;
+        }
+        section {
+            margin-top: 1rem;
+        }
+        p {
             margin: 0;
-            font-size: 1.5rem;
-            font-family: serif;
         }
     </style>
 </head>
 <body>
-    
-    <strong>Sivut tulossa / Site under construction</strong>
 
-    <h1 id="pp-">Pp.</h1>
-    <p>Pp. on joulukuussa 2023 avautuva kirjakauppa, joka myy sekä kauno- että tietokirjallisuutta. </p>
-    <p>Valikoimassa korostuvat kirjallisuuden marginaalit. Tietokirjallisuus keskittyy erityisesti teoriakirjallisuuteen kuten filosofiaan ja yhteiskuntateoriaan. Myynnissä on suomen- ja englanninkielisiä kirjoja.</p>
-    <p>Pp. palvelee Tekstin talon 1. kerroksessa osoitteessa Lintulahdenkatu 3.</p>
-    <p>Pp. järjestää kirjallisia tapahtumia ja tarjoaa kustantajille tapahtumapalveluja pienistä julkaisutilaisuuksista aina laajempien kirjallisten tapahtumien tuotantoon. Jos olet kiinnostunut tapahtumayhteistyöstä kirjakaupan kanssa, olethan yhteydessä sähköpostitse info@paginae.page.</p>
-    <p>Pp. instagram: <a href="https://www.instagram.com/pp.kirjakauppa/">pp.kirjakauppa</a></br> 
-    Pp. s-posti: info@paginae.page</p>
+    <header>
+        Pp.</br>
+        </br>
+        <abbr title="Maanantai–Perjantai / Monday–Friday">Ma–Pe / Mon–Fri</abbr></br>
+        <time datetime="11:00">11.00</time>–<time datetime="18:00">18.00</time></br>
+        </br>
+        <address>
+            <a href="https://www.tekstintalo.fi/">Tekstin talo</a>, 1. <abbr title="kerros">krs</abbr> </br>
+            Lintulahdenkatu 3, </br>
+            00530 Helsinki</br>
+            </br>
+            <span role="link" tabindex="0" aria-label="Soita meille numeroon +358406878628"><abbr title="Puhelinnumero">Puh.</abbr> +358 40 687 86 28</span></br>
+            <a href="https://instagram.com/pp.kirjakauppa" target="_blank">pp.kirjakauppa</a></br>
+            <mark aria-label="Sähköposti">info@paginae.page</mark>
+        </address>
+    </header>
 
-    <h1 id="pp-">Pp.</h1>
-    <p>Pp. is a new bookstore opening in December 2023. The store sells both literature and nonfiction titles. </p>
-    <p>The selection emphasises the marginals of literatures. The nonfiction catalogue focuses particularly on theory such as philosophy and political theory. The store sells Finnish and English language books. </p>
-    <p>Pp. is located in the 1st floor of Tekstin Talo complex at Lintulahdenkatu 3.</p>
-    <p>Alongside its book selection, Pp. also organises book-related events. Pp. offers event organisation services for publishers, specialising in organising book launching events alongside larger literature gatherings. If you are interested in collaborating on an event with Pp., please get in touch via email at info@paginae.page. </p>
-    <p>Pp. instagram: <a href="https://www.instagram.com/pp.kirjakauppa/">pp.kirjakauppa</a></br>
-    Pp. email: info@paginae.page</p>
+    <main>
+        <section lang="fi">
+            <p>Pp. on joulukuussa 2023 avautuva kirjakauppa, joka myy sekä kauno- että tietokirjallisuutta. Valikoimassa korostuvat kirjallisuuden marginaalit. Tietokirjallisuus keskittyy erityisesti teoriakirjallisuuteen kuten filosofiaan ja yhteiskuntateoriaan. Myynnissä on suomen- ja englanninkielisiä kirjoja.</p>
+            <p>Pp. järjestää kirjallisia tapahtumia ja tarjoaa kustantajille tapahtumapalveluja pienistä julkaisutilaisuuksista aina laajempien kirjallisten tapahtumien tuotantoon. Jos olet kiinnostunut tapahtumayhteistyöstä kirjakaupan kanssa, olethan yhteydessä sähköpostitse.</p>
+        </section>
+
+        <section lang="en">
+            <p>Pp. is a new bookstore opening in December 2023. The store sells both literature and nonfiction titles. The selection emphasises the marginals of literatures. The nonfiction catalogue focuses particularly on theory such as philosophy and political theory. The store sells Finnish and English language books. </p>
+            <p>Alongside its book selection, Pp. also organises book-related events. Pp. offers event organisation services for publishers, specialising in organising book launching events alongside larger literature gatherings. If you are interested in collaborating on an event with Pp., please get in touch via email. </p>
+        </section>
+    </main>
     
 </body>
 </html>
